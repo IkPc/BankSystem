@@ -14,7 +14,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./cadastro-conta.component.scss']
 })
 export class CadastroContaComponent implements OnInit{
-  editar;
+  editar: boolean;
   formGroup: FormGroup;
   clientes: Cliente[]
 

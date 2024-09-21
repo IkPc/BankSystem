@@ -1,8 +1,35 @@
-<div class='container mt-5'>
+<div mat class="header mb-5 d-flex justify-content-between">
+    <img src="src/favicon.ico" width="50" height="50"/>
+    <button mat-raised-button color='primary'
+    routerLink='/cliente/novo' class="item1">Novo cliente</button>
+    <mat-form-field class="item2">
+        <mat-label>Faça uma transação</mat-label>
+        <mat-select mat-raised-button color='primary'>
+            <mat-option raised-button color='primary'
+                routerLink='/conta/novo'
+                >Nova conta
+            </mat-option>
+            <mat-option
+                mat-raised-button color='primary'   
+                routerLink='/conta/deposito'
+                >Novo depósito
+            </mat-option>
+            <mat-option
+                mat-raised-button color='primary'
+                routerLink='/conta/saque'
+                >Novo saque
+            </mat-option>
+            <mat-option
+                mat-raised-button color='primary'
+                routerLink='/conta/transferencia'
+                >Nova transferência
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<div class='container t-5'>
     <div class='d-flex justify-content-between'>
         <h1>Listagem de clientes</h1>
-        <button mat-raised-button color='primary'
-        routerLink='/cliente/novo'>Novo cliente</button>
     </div>
     <table mat-table class='mt-5' [dataSource]='dataSource'>
         <!-- Coluna ID -->

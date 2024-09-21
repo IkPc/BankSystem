@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { ClienteModule } from './pages/cliente/cliente.module';
+import { MaterialModule } from './shared/material/material.module';
+import { ContaModule } from './pages/conta/conta.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ClienteModule } from './pages/cliente/cliente.module';
     MatButtonModule,
     NgxMaskDirective,
     NgxMaskPipe,
-    ClienteModule
+    ClienteModule,
+    ContaModule,
+    MaterialModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [provideNgxMask()],

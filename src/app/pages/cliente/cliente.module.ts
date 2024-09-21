@@ -30,6 +30,6 @@ import { ListagemClienteComponent } from './listagem-cliente/listagem-cliente.co
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [provideNgxMask()],
-  exports: [ CadastroClienteComponent ]
+  exports: [ CadastroClienteComponent, ListagemClienteComponent ]
 })
 export class ClienteModule { }
