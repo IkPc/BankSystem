@@ -28,5 +28,6 @@ import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.co
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [provideNgxMask()],
+  exports: [ CadastroClienteComponent ]
 })
 export class ClienteModule { }
